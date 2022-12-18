@@ -1,0 +1,282 @@
+body {
+  background-color: #f9f4e8;
+  display: flex;
+  flex-direction: column;
+}
+
+body > * {
+  margin: 50px 0;
+}
+
+header {
+  display: flex;
+  width: 97%;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+header div input[type='button'] {
+  background: linear-gradient(
+    95deg,
+    rgba(233, 169, 84, 1) 41%,
+    rgba(234, 106, 107, 1) 71%
+  );
+  color: aliceblue;
+  border: none;
+  border-radius: 5em;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+header .navbar-items {
+  display: none;
+}
+
+header nav label, .join-waitlist {
+  display: none;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  height: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main .shaps {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+main > .shaps img {
+  width: 250px;
+}
+
+main > .shaps img:nth-child(1) {
+  transform: rotate(-45deg);
+}
+
+main > .shaps img:nth-child(2) {
+  transform: rotate(-32deg);
+}
+
+main > .shaps img:nth-child(3) {
+  transform: rotate(-20deg);
+}
+
+main > .shaps img:not(:last-child) {
+  position: absolute;
+  z-index: -99;
+}
+
+main h1 {
+  font-size: 50px;
+  font-weight: 510;
+  line-height: 60px;
+}
+
+main p {
+  opacity: 0.65;
+}
+
+
+main .auth {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .auth .subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 120px;
+}
+
+main .auth .subscribe input {
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  text-transform: capitalize;
+  width: 100%;
+  padding: 0;
+}
+
+main .auth input[type='text'] {
+  color: black;
+  text-align: center;
+}
+
+main .auth input[type='button'] {
+  background-color: #4977ea;
+  color: aliceblue;
+}
+
+main .auth .no-spam {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  margin-top: 10px;
+}
+
+main .auth div label {
+  opacity: 0.65;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  height: 100px;
+}
+
+footer .contact {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  opacity: 0.65;
+  width: 70%;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+footer div img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+footer div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer > div > div p {
+  padding: 0;
+  margin: 0;
+}
+
+footer div p:last-child {
+  font-weight: bolder;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    margin: 25px;
+  }
+
+  body > * {
+    margin: 20px 0;
+  }
+  main .auth .subscribe {
+    flex-direction: row;
+    width: 70%;
+  }
+
+header nav label, .join-waitlist {
+    display: none;
+  }
+  main .auth .subscribe input[type='text'] {
+    width: 65%;
+  }
+  main .auth .subscribe input[type='button'] {
+    width: 30%;
+  }
+
+  main .auth .no-spam {
+    width: 38%;
+    margin: 0px;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  footer div {
+    width: 50%;
+    justify-content: flex-end;
+  }
+
+  footer .contact {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  body {
+    margin: 50px;
+  }
+
+  header nav input[value='join waitlist'] {
+    background-color: #4977ea;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    width: 95px;
+    height: 45px;
+    margin-left: 10px;
+  }
+
+
+  header .hamburger {
+    display: none;
+  }
+  header .navbar-items {
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    opacity: 0.589;
+  }
+
+  header nav label, .join-waitlist {
+    display: inline;
+  }
+
+  header .navbar-items label {
+    margin: 0 10px;
+  }
+
+  header nav label {
+    opacity: 0.589;
+  }
+
+  main {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  main .header-auth {
+    width: 500px;
+  }
+  main .auth .no-spam {
+    width: 55%;
+  }
+  main > .shaps img {
+    width: 350px;
+  }
+  header {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+}
